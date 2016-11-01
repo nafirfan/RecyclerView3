@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
         }
 
         mList.clear();
-        if (query.isEmpty()) {
+        if (query == null || query.isEmpty()) {
             mList.addAll(mListAll);
             isFiltered = false;
         } else {
